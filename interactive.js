@@ -417,9 +417,9 @@ function downloadURI(filename, uri) {
   let link = document.createElement("a");
   link.download = filename;
   link.href = uri;
-  document.body.appendChild(link);
+  document.getElementsById("mousecontainer").appendChild(link);
   link.click();
-  document.body.removeChild(link);
+  document.getElementsById("mousecontainer").removeChild(link);
 }
 
 class Material {
