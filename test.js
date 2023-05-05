@@ -526,7 +526,7 @@ function update () {
         const pointer = pointers[i];
         if (pointer.moved) {
             splat(pointer.x, pointer.y, pointer.dx, pointer.dy, pointer.color);
-            pointer.moved = false;
+            pointer.moved = true;
         }
     }
 
