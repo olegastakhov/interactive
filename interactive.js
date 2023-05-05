@@ -57,7 +57,7 @@ promoPopupClose.addEventListener("click", (e) => {
 
 // Simulation section
 
-const mousecontainer = document.getElementsByTagName("section")[0];
+const mousecontainer = document.getElementsByTagName("main")[0];
 
 const canvas = document.getElementsByTagName("canvas")[0];
 resizeCanvas();
