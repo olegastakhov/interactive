@@ -1,7 +1,6 @@
 'use strict';
 
 
-const mousefield = document.getElementsByTagName('aside')[0];
 const canvas = document.getElementsByTagName('canvas')[0];
 canvas.width = canvas.clientWidth;
 canvas.height = canvas.clientHeight;
@@ -621,7 +620,7 @@ function resizeCanvas () {
     }
 }
 
-mousefield.addEventListener('mousemove', (e) => {
+canvas.addEventListener('mousemove', (e) => {
     pointers[0].moved = pointers[0].down;
     pointers[0].dx = (e.offsetX - pointers[0].x) * 10.0;
     pointers[0].dy = (e.offsetY - pointers[0].y) * 10.0;
@@ -629,7 +628,7 @@ mousefield.addEventListener('mousemove', (e) => {
     pointers[0].y = e.offsetY;
 });
 
-mousefield.addEventListener('touchmove', (e) => {
+canvas.addEventListener('touchmove', (e) => {
     e.preventDefault();
     const touches = e.targetTouches;
     for (let i = 0; i < touches.length; i++) {
@@ -642,12 +641,12 @@ mousefield.addEventListener('touchmove', (e) => {
     }
 }, false);
 
-mousefield.addEventListener('mousedown', () => {
+canvas.addEventListener('mousedown', () => {
     pointers[0].down = true;
     pointers[0].color = [Math.random() + 0.2, Math.random() + 0.2, Math.random() + 0.2];
 });
 
-mousefield.addEventListener('touchstart', (e) => {
+canvas.addEventListener('touchstart', (e) => {
     e.preventDefault();
     const touches = e.targetTouches;
     for (let i = 0; i < touches.length; i++) {
