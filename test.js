@@ -1,5 +1,7 @@
 'use strict';
 
+
+const mousefield = document.getElementsById('mousefield')[0];
 const canvas = document.getElementsById('canvas')[0];
 canvas.width = canvas.clientWidth;
 canvas.height = canvas.clientHeight;
