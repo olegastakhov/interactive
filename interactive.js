@@ -1766,7 +1766,7 @@ function correctRadius(radius) {
   return radius;
 }
 
-canvas.addEventListener("mousedown", (e) => {
+mousecontainer.addEventListener("mousedown", (e) => {
   let posX = scaleByPixelRatio(e.offsetX);
   let posY = scaleByPixelRatio(e.offsetY);
   let pointer = pointers.find((p) => p.id == -1);
@@ -1774,7 +1774,7 @@ canvas.addEventListener("mousedown", (e) => {
   updatePointerDownData(pointer, -1, posX, posY);
 });
 
-canvas.addEventListener(
+mousecontainer.addEventListener(
   "mousemove",
   (e) => {
     let pointer = pointers[0];
@@ -1858,7 +1858,7 @@ window.addEventListener("mouseup", () => {
   updatePointerUpData(pointers[0]);
 });
 
-canvas.addEventListener("touchstart", (e) => {
+mousecontainer.addEventListener("touchstart", (e) => {
   e.preventDefault();
   const touches = e.targetTouches;
   while (touches.length >= pointers.length)
@@ -1870,7 +1870,7 @@ canvas.addEventListener("touchstart", (e) => {
   }
 });
 
-canvas.addEventListener(
+mousecontainer.addEventListener(
   "touchmove",
   (e) => {
     e.preventDefault();
@@ -1890,7 +1890,7 @@ canvas.addEventListener(
 
 
 
-canvas.addEventListener(
+mousecontainer.addEventListener(
   "mousemove",
   (e) => {
     e.preventDefault();
