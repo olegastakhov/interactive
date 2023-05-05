@@ -117,7 +117,7 @@ function pointerPrototype () {
     this.dx = 0;
     this.dy = 0;
     this.down = false;
-    this.moved = false;
+    this.moved = true;
     this.color = [30, 0, 300];
 }
 
