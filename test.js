@@ -526,7 +526,7 @@ function update () {
         const pointer = pointers[i];
         if (pointer.moved) {
             splat(pointer.x, pointer.y, pointer.dx, pointer.dy, pointer.color);
-            pointer.moved = true;
+            pointer.moved = false;
         }
     }
 
@@ -633,11 +633,11 @@ canvas.addEventListener('touchmove', (e) => {
     const touches = e.targetTouches;
     for (let i = 0; i < touches.length; i++) {
         let pointer = pointers[i];
+        pointer.moved = pointer.down;
         pointer.dx = (touches[i].pageX - pointer.x) * 10.0;
         pointer.dy = (touches[i].pageY - pointer.y) * 10.0;
         pointer.x = touches[i].pageX;
         pointer.y = touches[i].pageY;
-        pointer.moved = Math.abs(pointer.deltaX) > 0 || Math.abs(pointer.deltaY) > 0;
     }
 }, false);
 
