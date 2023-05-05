@@ -1,8 +1,8 @@
 'use strict';
 
 
-const mousefield = document.getElementsByTag('main')[0];
-const canvas = document.getElementsByTag('canvas')[0];
+const mousefield = document.getElementsByTagName('main')[0];
+const canvas = document.getElementsByTagName('canvas')[0];
 canvas.width = canvas.clientWidth;
 canvas.height = canvas.clientHeight;
 
