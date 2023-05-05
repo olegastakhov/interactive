@@ -1946,8 +1946,8 @@
               "-webkit-transform 0.2s ease-out, opacity 0.2s linear",
             transition: "transform 0.2s ease-out, opacity 0.2s linear",
           }),
-          document.body.appendChild(this.backgroundElement),
-          document.body.appendChild(this.domElement);
+          document.getElementsById("mousecontainer").appendChild(this.backgroundElement),
+          document.getElementsById("mousecontainer".appendChild(this.domElement);
         var t = this;
         X.bind(this.backgroundElement, "click", function () {
           t.hide();
@@ -2181,7 +2181,7 @@
             ((ce = document.createElement("div")),
             X.addClass(ce, "dg"),
             X.addClass(ce, e.CLASS_AUTO_PLACE_CONTAINER),
-            document.body.appendChild(ce),
+            document.getElementsById("mousecontainer".appendChild(ce),
             (de = !1)),
           ce.appendChild(this.domElement),
           X.addClass(this.domElement, e.CLASS_AUTO_PLACE)),
