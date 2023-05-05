@@ -29,6 +29,8 @@ SOFTWARE.
 const promoPopup = document.getElementsByClassName("promo")[0];
 const promoPopupClose = document.getElementsByClassName("promo-close")[0];
 
+
+
 if (isMobile()) {
   setTimeout(() => {
     promoPopup.style.display = "table";
@@ -54,6 +56,8 @@ promoPopupClose.addEventListener("click", (e) => {
 // });
 
 // Simulation section
+
+const mousecontainer = document.getElementsByTagName("mousecontainer")[0];
 
 const canvas = document.getElementsByTagName("canvas")[0];
 resizeCanvas();
