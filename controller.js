@@ -10,6 +10,7 @@
  *
  * http://www.apache.org/licenses/LICENSE-2.0
  */
+
 !(function (e, t) {
  "object" == typeof exports && "undefined" != typeof module ? t(exports) : "function" == typeof define && define.amd ? define(["exports"], t) : t((e.dat = {}));
 })(this, function (e) {
