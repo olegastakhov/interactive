@@ -1,5 +1,5 @@
 window['webgl-fluid'].default(document.querySelector('canvas'));
-document.querySelector('.wrapper')
+document.querySelector('.page-kids')
   .addEventListener('mousemove', event => {
     console.log('move');
     newEvent = new event.constructor(
