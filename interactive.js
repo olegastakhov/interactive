@@ -7394,9 +7394,9 @@
        COLOR_UPDATE_SPEED: 10,
        PAUSED: false,
        BACK_COLOR: {
-        r: 10,
-        g: 10,
-        b: 10,
+        r: 64,
+        g: 64,
+        b: 255,
        },
        TRANSPARENT: false,
        BLOOM: true,
@@ -8046,7 +8046,7 @@
     }
 
     function Je() {
-     var e = Qe(Math.random(), 1, 1);
+     var e = Qe(0, 0, 1);
      return (e.r *= 0.15), (e.g *= 0.15), (e.b *= 0.15), e;
     }
 
