@@ -1,13 +1,20 @@
-window['webgl-fluid'].default(document.querySelector('canvas'));
-document.querySelector('.page-kids')
-  .addEventListener('mousemove', event => {
-    console.log('move');
-    newEvent = new event.constructor(
-      event.type, event);
-    document.querySelector('canvas')
-      .dispatchEvent(newEvent);
-});
-document.querySelector('button')
-  .addEventListener('click', event => {
-    console.log('button clicked');
-});
+window["webgl-fluid"].default(document.querySelector("canvas"));
+
+const canvas = document.querySelector("canvas");
+const overlay = document.querySelector(".page-kids");
+
+if (canvas && overlay) {
+  [
+    "mousedown",
+    "mousemove",
+    "mouseup",
+    "touchstart",
+    "touchmove",
+    "touchend",
+  ].forEach((eventName) => {
+    overlay.addEventListener(eventName, (event) => {
+      const updatedEvent = new event.constructor(event.type, event);
+      canvas.dispatchEvent(updatedEvent);
+    });
+  });
+}
