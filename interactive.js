@@ -8046,7 +8046,7 @@
     }
 
     function Je() {
-     var e = Qe(0, 0, 1);
+     var e = Qe(240, 61, 51);
      return (e.r *= 0.15), (e.g *= 0.15), (e.b *= 0.15), e;
     }
 
